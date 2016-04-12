@@ -1,6 +1,10 @@
-# DEAP_modifications
-Adding the subtree crossover <br>
-1) On algorithms.py you have to import the cx_mut.py<br>
+
+#Adding the subtree crossover <br>
+
+<b>Note</b>:  Remember that <i>algorithms.py</i> and <i>gp.py</i> files are part of DEAP framework, you have to modify this frameworks files to call the other ones.<br>
+The principal.py file is the one where you have the main function. In this ocassion is the example from DEAP framework to symbolic regression.<br>
+
+1) On algorithms.py you have to import the cx_mut.py (on top of the file):<br>
 <code>import cx_mut</code>
 
 2) On the same file, you have to change the line:
