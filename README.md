@@ -1,12 +1,12 @@
 # DEAP_modifications
-Adding the subtree crossover 
+Adding the subtree crossover <br>
 1) On algorithms.py you have to import the cx_mut.py<br>
 <code>import cx_mut</code>
 
 2) On the same file, you have to change the line:
 <code>offspring = varAnd(offspring, toolbox, cxpb, mutpb)</code><br>
 to:<br>
-<code>offspring = cx_mut.varOr(offspring, toolbox, cxpb, mutpb)
+<code>offspring = cx_mut.varOr(offspring, toolbox, cxpb, mutpb)</code>
 
 3) On the principal file "principal.py" (in this case), you have to import the cxSubtree.py file: <br>
 <code>import cxSubtree as cx</code>
