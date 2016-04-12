@@ -7,7 +7,7 @@ The <i>principal.py</i> file is the one where you have the main function. In thi
 1) On algorithms.py you have to import the cx_mut.py (on top of the file):<br>
 <code>import cx_mut</code>
 
-2) On the same file, you have to change the line:
+2) On the same file, you have to change the line:<br>
 <code>offspring = varAnd(offspring, toolbox, cxpb, mutpb)</code><br>
 to:<br>
 <code>offspring = cx_mut.varOr(offspring, toolbox, cxpb, mutpb)</code>
